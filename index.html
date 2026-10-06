@@ -1,284 +1,74 @@
 <!DOCTYPE html>
 <html lang="zh-HK">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alice Li, Man Yan — Resume</title>
-<link rel="preconnect" href="https://miaoda.feishu.cn" crossorigin>
-<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
-<style>
-  :root{
-    --white:#FFFFFF;
-    --sky:#87CEEB;
-    --sky-deep:#4A90C2;
-    --ink:#22303E;
-    --ink-soft:#5A6772;
-    --line:#DFE6EC;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    font-family:"IBM Plex Sans", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
-    color:var(--ink);
-    background:var(--white);
-    line-height:1.7;
-    font-size:18px;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3{font-family:"Space Grotesk","PingFang SC",sans-serif;}
-  a{color:var(--sky-deep);text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  .wrap{max-width:860px;margin:0 auto;padding:0 28px;}
-
-  /* ===== Header ===== */
-  header.hero{padding:56px 0 34px;background:var(--white);}
-  header.hero h1{
-    margin:0 0 8px;font-size:46px;line-height:1.1;font-weight:700;letter-spacing:-.01em;color:var(--ink);
-  }
-  .hero-role{font-size:20px;color:var(--sky-deep);margin:0 0 18px;font-weight:500;}
-  .contact-row{display:flex;flex-wrap:wrap;gap:10px 30px;font-size:17px;color:var(--ink);}
-  .contact-row span{white-space:nowrap;}
-  .contact-row strong{color:var(--sky-deep);font-weight:600;}
-
-  /* ===== Sections ===== */
-  section{padding:40px 0;border-top:1px solid var(--line);}
-  section h2{
-    margin:0 0 22px;font-size:30px;font-weight:600;letter-spacing:-.01em;color:var(--sky-deep);
-    padding-bottom:10px;border-bottom:3px solid var(--sky);
-  }
-  section h3{margin:0 0 4px;font-size:21px;font-weight:600;color:var(--ink);}
-
-  /* ===== Entry (title + date + bullets) ===== */
-  .entry{display:flex;gap:26px;margin-bottom:26px;}
-  .entry:last-child{margin-bottom:0;}
-  .entry .date{
-    flex:0 0 170px;font-size:15.5px;font-weight:600;color:var(--ink-soft);line-height:1.5;
-    padding-top:5px;
-  }
-  .entry .body{flex:1;}
-  .entry .org{font-size:17px;font-weight:500;color:var(--sky-deep);margin:0 0 2px;}
-  .entry ul{margin:0;padding-left:20px;}
-  .entry li{font-size:17px;margin-bottom:6px;}
-  .entry .tools{margin-top:8px;font-size:16px;color:var(--ink-soft);}
-  .entry .tools strong{font-weight:600;color:var(--sky-deep);}
-
-  /* ===== Skills ===== */
-  .skill-block{margin-bottom:20px;}
-  .skill-block h3{font-size:19px;color:var(--sky-deep);margin-bottom:10px;}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;}
-  .chip{
-    font-size:16px;font-weight:500;color:var(--ink);
-    background:var(--white);border:1px solid var(--sky);
-    padding:5px 14px;border-radius:999px;
-  }
-  .chip.lang{color:var(--white);background:var(--sky-deep);border-color:var(--sky-deep);}
-  .chip small{display:block;font-weight:400;font-size:12.5px;color:var(--ink-soft);}
-
-  /* ===== Responsive ===== */
-  @media (max-width:720px){
-    header.hero h1{font-size:36px;}
-    .entry{flex-direction:column;gap:4px;}
-    .entry .date{padding-top:0;}
-    .wrap{padding:0 20px;}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice Li — Home</title>
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-  <div class="wrap">
-    <h1>Alice Li, Man Yan</h1>
-    <p class="hero-role">Computer Science · Data Media Communication — Hong Kong Baptist University</p>
-    <div class="contact-row">
-      <span><strong>TEL:</strong> +852 62718514</span>
-      <span><strong>EMAIL:</strong> <a href="mailto:lwxalice741@gmail.com">lwxalice741@gmail.com</a></span>
+<!-- common header -->
+<header class="site-header">
+  <div class="wrap header-flex">
+    <img src="photo_home.jpeg" alt="Alice Li" class="avatar">
+    <div class="header-info">
+      <h1>Li Man Yan</h1>
+      <p class="nickname">Nick name: Alice</p>
+      <p class="role">Computer Science · Data Media Communication — HKBU</p>
+      <div class="contact-row">
+        <span><strong>TEL:</strong> +852 62718514</span>
+        <span><strong>EMAIL:</strong> <a href="mailto:lwxalice741@gmail.com">lwxalice741@gmail.com</a></span>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- skills-->
-<section>
-  <div class="wrap">
-    <h2>Skills</h2>
-    <div class="skill-block">
-      <h3>Software</h3>
-      <div class="chips">
-        <span class="chip">Java</span>
-        <span class="chip">Python</span>
-        <span class="chip">C++</span>
-        <span class="chip">Vue.js</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">Bootstrap</span>
-        <span class="chip">HTML</span>
-        <span class="chip">MongoDB</span>
-        <span class="chip">MySQL</span>
-        <span class="chip">GitHub</span>
-        <span class="chip">Microsoft Office</span>
+<!-- selection -->
+<main class="wrap">
+  <div class="tile-grid">
+    <a href="cv.html" class="tile">
+      <div>
+        <div class="tile-title">CV</div>
+        <div class="tile-sub">學歷 · 技能 · 簡歷</div>
       </div>
-    </div>
-    <div class="skill-block">
-      <h3>Language proficiency</h3>
-      <div class="chips">
-        <span class="chip">English</span>
-        <span class="chip">Cantonese</span>
-        <span class="chip">Mandarin - Certificate of Proficiency in Putonghua Second Class Lower</span>
+      <span class="tile-arrow">→</span>
+    </a>
+
+    <a href="projects.html" class="tile">
+      <div>
+        <div class="tile-title">Projects</div>
+        <div class="tile-sub">程式與設計專案</div>
       </div>
-    </div>
+      <span class="tile-arrow">→</span>
+    </a>
+
+    <a href="internship.html" class="tile">
+      <div>
+        <div class="tile-title">Internship</div>
+        <div class="tile-sub">實習經歷</div>
+      </div>
+      <span class="tile-arrow">→</span>
+    </a>
+
+    <a href="community.html" class="tile">
+      <div>
+        <div class="tile-title">Community Service</div>
+        <div class="tile-sub">社區服務</div>
+      </div>
+      <span class="tile-arrow">→</span>
+    </a>
+
+    <a href="activities.html" class="tile">
+      <div>
+        <div class="tile-title">Extracurricular Activities</div>
+        <div class="tile-sub">課外活動</div>
+      </div>
+      <span class="tile-arrow">→</span>
+    </a>
   </div>
-</section>
-
-<!--Education -->
-<section>
-  <div class="wrap">
-    <h2>Education Background</h2>
-    <div class="entry">
-      <div class="date">Sep 2023 - Now</div>
-      <div class="body">
-        <h3>Bachelor of Science — Hong Kong Baptist University</h3>
-        <p class="org">Key Courses: Computer Science · Data Media Communication</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--Internship -->
-<section>
-  <div class="wrap">
-    <h2>Internship</h2>
-
-    <div class="entry">
-      <div class="date">Mar 2026 - Jul 2026</div>
-      <div class="body">
-        <h3>IT &amp; Digital Education Support Intern</h3>
-        <p class="org">Christian Alliance S W Chan Memorial College</p>
-        <ul>
-          <li>Supported school-wide STEAM Week (300+ students) by setting up AR glasses, drones, robotic dogs and iPads, and ran the heat transfer printing station for visiting District Council members.</li>
-          <li>Developed and tested an AI tutoring chatbot, redesigning prompt rules and guardrails to guide students step by step instead of giving full code answers.</li>
-          <li>Coordinated STEAM events and outreach, including the GBA AI Cultural Tour (14 award winners), a cross-border Maker Camp, and coding workshops for primary school students.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="date">Jul 2024 - Aug 2024</div>
-      <div class="body">
-        <h3>PMP Summer Internship — Assistant in SPC</h3>
-        <p class="org">Hong Kong Police</p>
-        <ul>
-          <li>Assisted in planning and executing three large-scale "Senior Police Call" events, improving community engagement and event success.</li>
-          <li>Recruited over 300 new members (56% increase) during a key exhibition event, significantly expanding community participation.</li>
-          <li>Conducted research and reviews to support public service operations, enhancing teamwork and operational understanding.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<sction>
-    <div class="wrap">
-        <h2>Other work experiences</h2>
-        
-        <div class="entry">
-            <div class="date">Sep 2023 - Now</div>
-            <div class="body">
-              <h3>Tutor</h3>
-              <p class="org">Christian Alliance S W Chan Memorial College</p>
-              <ul>
-                <li>Tutored students in academic subjects, answered inquiries promptly, and reinforced learning progress to boost academic performance.</li>
-                <li>Developed the ability to explain technical concepts and complex problems clearly.</li>
-              </ul>
-            </div>
-          </div>
-      </div>
-</sction>
-
-<!-- Community services/ Extra-activity -->
-<section>
-    <div class="wrap">
-      <h2>Activities</h2>
-  
-      <div class="entry">
-        <div class="date">Sep 2023 - Aug 2024</div>
-        <div class="body">
-          <h3>Dreamer Lab Award (HKBU) — Event General Coordinator</h3>
-          <ul>
-            <li>Organized nearly seven community events for approximately 20 elderly participants.</li>
-            <li>Designed and delivered digital literacy workshops, covering social media, hospital apps, and photography.</li>
-            <li>Coordinated meetings and outdoor activities, strengthening project management and intergenerational communication skills.</li>
-          </ul>
-        </div>
-      </div>
-  
-      <div class="entry">
-        <div class="date">Sep 2023 - Aug 2024</div>
-        <div class="body">
-          <h3>Mental Health First Aid — Event Planner</h3>
-          <p class="org">Served as the university's Mental Health First Aid Captain</p>
-          <ul>
-            <li>Planned and promoted mental health awareness events.</li>
-            <li>Set up on-campus booths to provide students with opportunities to relax, communicate, and decompress.</li>
-            <li>Enhanced skills in event planning, promotion, and team leadership.</li>
-          </ul>
-        </div>
-      </div>
-  
-      <div class="entry">
-        <div class="date">Feb 2025 - Jun 2025</div>
-        <div class="body">
-          <h3>Principal Chan Free Tutorial World — Volunteer Teacher</h3>
-          <ul>
-            <li>Monitored and supported students' learning processes, providing personalized guidance.</li>
-            <li>Enhanced communication and adaptive teaching skills.</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-<!-- Projects -->
-<section>
-  <div class="wrap">
-    <h2>Design Project</h2>
-
-    <div class="entry">
-      <div class="date">Feb 2026 - Apr 2026</div>
-      <div class="body">
-        <h3>Traffic Congestion Prediction &amp; Strategy Analysis</h3>
-        <p class="tools"><strong>Tools:</strong> Python (Pandas, Scikit-learn, SHAP, T-test)</p>
-        <ul>
-          <li>Conducted a model comparative test (SVM vs Random Forest) on HK tunnel dataset; Random Forest lifted accuracy by 9% and reached 0.98 recall for high-risk congestion cases.</li>
-          <li>Used SHAP &amp; T-test (p&lt;0.001) for quantitative attribution; verified structural features outweigh weather/time factors by 10-fold, supporting segmentation analysis.</li>
-          <li>Diagnosed performance degradation caused by missing-data noise when integrating LSTM features and documented failure-analysis takeaways.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="date">Oct 2025 - Dec 2025</div>
-      <div class="body">
-        <h3>KidPaint2 Collaborative Painting App</h3>
-        <p class="tools"><strong>Tools:</strong> Java, JavaFX</p>
-        <ul>
-          <li>Led the development of a peer-to-peer painting application using Java and JavaFX, implementing TCP/UDP networking for real-time canvas synchronization and studio discovery.</li>
-          <li>Designed and coded multiple drawing tools including lasso selection, shape drawing, and a rainbow pen feature.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="date">Oct 2025 - Dec 2025</div>
-      <div class="body">
-        <h3>Library Management System with JWT Authentication</h3>
-        <p class="tools"><strong>Tools:</strong> Vue.js, Express.js, MongoDB</p>
-        <ul>
-          <li>Built a full-stack library website with role-based access control (Admin/User) using Vue.js, Express.js, and MongoDB.</li>
-          <li>Implemented JWT token authentication, book borrowing/returning functionality, and an admin panel with pagination, search, and CRUD operations.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
 </body>
 </html>
