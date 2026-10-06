@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Alice Li</title>
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-flex">
+    <img src="photo_home.jpeg" alt="Alice Li" class="avatar">
+    <div class="header-info">
+      <h1>Li Man Yan</h1>
+      <p class="nickname">Nick name: Alice</p>
+      <p class="role">Computer Science · Data Media Communication — HKBU</p>
+      <div class="contact-row">
+        <span><strong>TEL:</strong> +852 62718514</span>
+        <span><strong>EMAIL:</strong> <a href="mailto:lwxalice741@gmail.com">lwxalice741@gmail.com</a></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2 class="page-title">Projects</h2>
+
+  <!-- data traffic -->
+  <details class="entry">
+    <summary>
+      <div class="summary-left">
+        <div class="entry-title">Traffic Congestion Prediction &amp; Strategy Analysis</div>
+        <div class="entry-org">Machine Learning · Data Analysis</div>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">SHAP</span>
+        </div>
+      </div>
+      <div class="date">Feb 2026 – Apr 2026</div>
+    </summary>
+    <div class="entry-body">
+      <ul>
+        <li>Conducted a model comparative test (SVM vs Random Forest) on HK tunnel dataset; Random Forest lifted accuracy by 9% and reached 0.98 recall for high-risk congestion cases.</li>
+        <li>Used SHAP &amp; T-test (p&lt;0.001) for quantitative attribution; verified structural features outweigh weather/time factors by 10-fold.</li>
+        <li>Diagnosed performance degradation caused by missing-data noise when integrating LSTM features and documented failure-analysis takeaways.</li>
+      </ul>
+      <p class="tools"><strong>Tools:</strong> Python (Pandas, Scikit-learn, SHAP, T-test)</p>
+    </div>
+  </details>
+
+  <!-- BUHack -->
+  <details class="entry">
+    <summary>
+      <div class="summary-left">
+        <div class="entry-title">BUHack — Peer Finder Web App</div>
+        <div class="entry-org">Hackathon · Full-stack Web Development</div>
+        <div class="tag-row">
+          <span class="tag">Hackathon</span>
+          <span class="tag">Web App</span>
+          <span class="tag">Authentication</span>
+          <span class="tag">Matching</span>
+        </div>
+      </div>
+      <div class="date">March 2026</div>
+    </summary>
+    <div class="entry-body">
+      <ul>
+        <li>Built a peer-matching web app in a 3-day hackathon to help university students find study partners and connect beyond the classroom.</li>
+        <li>Implemented user login with authentication, a matching flow, and a posting system where users can publish requests and contact posters directly.</li>
+        <li>Placed 7th out of all teams; identified time allocation and team alignment as key learning areas.</li>
+      </ul>
+      <a href="project_hack.html" class="more-btn">More details →</a>
+    </div>
+  </details>
+
+  <!-- KidPaint2 -->
+  <details class="entry">
+    <summary>
+      <div class="summary-left">
+        <div class="entry-title">KidPaint2 Collaborative Painting App</div>
+        <div class="entry-org">Peer-to-peer · Networking</div>
+        <div class="tag-row">
+          <span class="tag">Java</span>
+          <span class="tag">JavaFX</span>
+          <span class="tag">TCP/UDP</span>
+        </div>
+      </div>
+      <div class="date">Oct 2025 – Dec 2025</div>
+    </summary>
+    <div class="entry-body">
+      <ul>
+        <li>Led the development of a peer-to-peer painting application using Java and JavaFX.</li>
+        <li>Implemented TCP/UDP networking for real-time canvas synchronization and studio discovery.</li>
+        <li>Designed and coded multiple drawing tools including lasso selection, shape drawing, and a rainbow pen feature.</li>
+      </ul>
+      <p class="tools"><strong>Tools:</strong> Java, JavaFX</p>
+    </div>
+  </details>
+
+  <!-- library -->
+  <details class="entry">
+    <summary>
+      <div class="summary-left">
+        <div class="entry-title">Library Management System with JWT Authentication</div>
+        <div class="entry-org">Full-stack Web Application</div>
+        <div class="tag-row">
+          <span class="tag">Vue.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">MongoDB</span>
+        </div>
+      </div>
+      <div class="date">Oct 2025 – Dec 2025</div>
+    </summary>
+    <div class="entry-body">
+      <ul>
+        <li>Built a full-stack library website with role-based access control (Admin/User).</li>
+        <li>Implemented JWT token authentication, book borrowing/returning functionality.</li>
+        <li>Built an admin panel with pagination, search, and CRUD operations.</li>
+      </ul>
+      <p class="tools"><strong>Tools:</strong> Vue.js, Express.js, MongoDB</p>
+    </div>
+  </details>
+
+  <a href="index.html" class="back-link">← Back</a>
+</main>
+
+</body>
+</html>
